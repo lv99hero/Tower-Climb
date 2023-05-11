@@ -13,6 +13,7 @@ namespace PlayerInfo
         public string gender = "";
         public DateTime dob;
         public int level;
+        public string t1class;
 
 
         // stats

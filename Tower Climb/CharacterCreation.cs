@@ -14,27 +14,27 @@ namespace CharacterCreation
             Player player = new Player();
 
             // Prompt user to create character
-            Console.WriteLine("Please enter your character's name:");
+            Console.WriteLine("Please enter your character's name: ");
             player.name = Console.ReadLine();
             
 
-            Console.WriteLine("Please enter your character's gender (M/F/NB):");
+            Console.WriteLine("Please enter your character's gender (M/F/NB): ");
             player.gender = Console.ReadLine();
             
 
-            Console.WriteLine("Please enter your character's date of birth (MM/DD/YYYY):");
+            Console.WriteLine("Please enter your character's date of birth (MM/DD/YYYY): ");
             DateTime dob = DateTime.Parse(Console.ReadLine());
             dob = player.dob;
 
 
 
             // Ask user to choose starting class
-            Console.WriteLine("Choose your starting class: Warrior or Mage");
-            string startingClass = Console.ReadLine();
+            Console.WriteLine("Choose your starting class: Warrior or Mage\n");
+            player.t1class = Console.ReadLine();
 
             // Set starting statistics based on class
-            
-            if (startingClass.ToLower() == "warrior")
+
+            if (player.t1class.ToLower() == "warrior")
             {
                 player.hp = 20;
                 player.fp = 5;
@@ -45,7 +45,7 @@ namespace CharacterCreation
                 player.spd = 3;
                 player.luc = 1;
             }
-            else if (startingClass.ToLower() == "mage")
+            else if (player.t1class.ToLower() == "mage")
             {
                 player.hp = 10;
                 player.fp = 10;
@@ -59,7 +59,7 @@ namespace CharacterCreation
             else
             {
                 Console.WriteLine("That option is invalid.");
-                Console.WriteLine("Choose your starting class: Warrior or Mage");
+                Console.WriteLine("Choose your starting class: Warrior or Mage\n");
 
             }
 
@@ -67,7 +67,7 @@ namespace CharacterCreation
             Console.WriteLine($"Name: {player.name}");
             Console.WriteLine($"Gender: {player.gender}");
             Console.WriteLine($"Date of Birth: {dob}");
-            Console.WriteLine($"Starting Class: {startingClass}");
+            Console.WriteLine($"Starting Class: {player.t1class}");
             Console.WriteLine("Starting Statistics:");
             Console.WriteLine($"HP: {player.hp}");
             Console.WriteLine($"FP: {player.fp}");
