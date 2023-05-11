@@ -1,0 +1,15 @@
+PSEUDOCODE
+Tower Climb
+
+
+1. This program will allow the user to name themselves, choose their date of birth, and select a starting class. It will then print the results that the user chose and ask for confirmation.
+
+//Prompt user for name/gender/dob
+writeline "please enter your name:"
+string name = readline();
+writeline "please enter your gender (m/f/nb):"
+string gender = readline();
+writeline "please enter your dob (mm/dd/yyyy):"
+datetime dob = datetime.parse(readline())	 //should show the dob in mm/dd/yyyy
+writeline "please select a starting class: warrior or mage"
+string startingClass = readline()
