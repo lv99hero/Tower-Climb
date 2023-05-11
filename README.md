@@ -1,5 +1,5 @@
 
-# [GAME TITLE TBD] - README
+# Straight Shot - README
 Welcome to this text-based RPG game project in C#! In this game, your goal is to reach the 30th floor of a tower filled with challenges and dangers. Along the way, you will face boss monsters on every 10th floor, each more powerful than the last.
 
 The game features an experience point system that allows you to level up your character as you progress through the tower. Each level-up will upgrade your character's stats and unlock various spells and abilities. You'll need to carefully choose how you distribute your points to make sure you're prepared for the challenges ahead.
